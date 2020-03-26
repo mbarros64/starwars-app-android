@@ -4,9 +4,8 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.starwars_kotlin.R
-import com.example.starwars_kotlin.databinding.ItemPeopleBinding
+import com.example.starwars_kotlin. databinding.ItemPeopleBinding
 import com.example.starwars_kotlin.model.People
-
 
 class PeopleAdapter(private var PeopleList: ArrayList<People>) :
     RecyclerView.Adapter<PeopleViewHolder>() {
