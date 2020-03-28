@@ -8,7 +8,7 @@ import com.example.starwars_kotlin. databinding.ItemPeopleBinding
 import com.example.starwars_kotlin.model.People
 
 class PeopleAdapter(private var PeopleList: ArrayList<People>) :
-    RecyclerView.Adapter<PeopleViewHolder>() {
+    RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeopleViewHolder {
         val itemPeopleBinding: ItemPeopleBinding = DataBindingUtil.inflate(
@@ -31,7 +31,7 @@ class PeopleAdapter(private var PeopleList: ArrayList<People>) :
         PeopleList.addAll(listOfPeoples)
         notifyDataSetChanged()
     }
+    inner class PeopleViewHolder(val itemPeopleBinding: ItemPeopleBinding) :
+        RecyclerView.ViewHolder(itemPeopleBinding.root)
 }
 
-class PeopleViewHolder(val itemPeopleBinding: ItemPeopleBinding) :
-    RecyclerView.ViewHolder(itemPeopleBinding.root)
