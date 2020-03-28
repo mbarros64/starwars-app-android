@@ -32,12 +32,14 @@ android {
 
 
 }
+ext {
+    lifeCycleExtensionsVersion = '1.1.1'
+    androidxVersion = '1.1.0'
+    retrofitVersion = '2.4.0'
+    daggerVersion = '2.13'
+    firstStableVersion = '1.0.0'
+}
 
-def lifeCycleExtensionsVersion = '1.1.1'
-def androidxVersion = '1.1.0'
-def retrofitVersion = '2.4.0'
-def daggerVersion = '2.13'
-def firstStableVersion = '1.0.0'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
