@@ -1,8 +1,8 @@
-package com.example.starwars_kotlin.di
+package com.matheus.starwars.di
 
-import com.example.starwars_kotlin.service.NetworkService
-import com.example.starwars_kotlin.view.MainActivity
-import com.example.starwars_kotlin.viewmodel.PeopleViewModel
+import com.matheus.starwars.service.NetworkService
+import com.matheus.starwars.view.MainActivity
+import com.matheus.starwars.viewmodel.PeopleViewModel
 import dagger.Component
 
 @Component(modules = [ApiModule::class])

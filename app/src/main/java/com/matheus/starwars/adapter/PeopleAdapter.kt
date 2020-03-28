@@ -1,11 +1,11 @@
-package com.example.starwars_kotlin.adapter
+package com.matheus.starwars.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.starwars_kotlin.R
-import com.example.starwars_kotlin. databinding.ItemPeopleBinding
-import com.example.starwars_kotlin.model.People
+import com.matheus.starwars.R
+import com.matheus.starwars.databinding.ItemPeopleBinding
+import com.matheus.starwars.model.People
 
 class PeopleAdapter(private var PeopleList: ArrayList<People>) :
     RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {

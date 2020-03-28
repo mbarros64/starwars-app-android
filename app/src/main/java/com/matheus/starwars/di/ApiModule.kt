@@ -1,10 +1,10 @@
-package com.example.starwars_kotlin.di
+package com.matheus.starwars.di
 
 import androidx.lifecycle.MutableLiveData
-import com.example.starwars_kotlin.adapter.PeopleAdapter
-import com.example.starwars_kotlin.api_endpoint.StarWarsApi
-import com.example.starwars_kotlin.model.People
-import com.example.starwars_kotlin.service.NetworkService
+import com.matheus.starwars.adapter.PeopleAdapter
+import com.matheus.starwars.api_endpoint.StarWarsApi
+import com.matheus.starwars.model.People
+import com.matheus.starwars.service.NetworkService
 import dagger.Module
 import dagger.Provides
 import io.reactivex.disposables.CompositeDisposable

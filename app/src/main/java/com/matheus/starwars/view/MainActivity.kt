@@ -1,4 +1,4 @@
-package com.example.starwars_kotlin.view
+package com.matheus.starwars.view
 
 import android.os.Bundle
 import android.view.View
@@ -7,11 +7,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.starwars_kotlin.R
-import com.example.starwars_kotlin.adapter.PeopleAdapter
-import com.example.starwars_kotlin.di.DaggerApiComponent
-import com.example.starwars_kotlin.model.People
-import com.example.starwars_kotlin.viewmodel.PeopleViewModel
+import com.matheus.starwars.R
+import com.matheus.starwars.adapter.PeopleAdapter
+import com.matheus.starwars.di.DaggerApiComponent
+import com.matheus.starwars.model.People
+import com.matheus.starwars.viewmodel.PeopleViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 

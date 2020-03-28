@@ -1,4 +1,4 @@
-package com.example.starwars_kotlin.model
+package com.matheus.starwars.model
 
 data class PeopleResult(
     val count: Int,

@@ -1,11 +1,11 @@
-package com.example.starwars_kotlin.viewmodel
+package com.matheus.starwars.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.starwars_kotlin.di.DaggerApiComponent
-import com.example.starwars_kotlin.model.People
-import com.example.starwars_kotlin.service.NetworkService
+import com.matheus.starwars.di.DaggerApiComponent
+import com.matheus.starwars.model.People
+import com.matheus.starwars.service.NetworkService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
