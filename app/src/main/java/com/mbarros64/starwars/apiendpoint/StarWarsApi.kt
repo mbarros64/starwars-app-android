@@ -1,4 +1,4 @@
-package com.mbarros64.starwars.api_endpoint
+package com.mbarros64.starwars.apiendpoint
 import com.mbarros64.starwars.model.PeopleResult
 import com.mbarros64.starwars.service.NetworkService
 import io.reactivex.Single

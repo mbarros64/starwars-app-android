@@ -1,6 +1,6 @@
 package com.mbarros64.starwars.service
 
-import com.mbarros64.starwars.api_endpoint.StarWarsApi
+import com.mbarros64.starwars.apiendpoint.StarWarsApi
 import com.mbarros64.starwars.di.DaggerApiComponent
 import com.mbarros64.starwars.model.PeopleResult
 import io.reactivex.Single

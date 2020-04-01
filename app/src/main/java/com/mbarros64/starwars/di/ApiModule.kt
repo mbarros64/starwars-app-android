@@ -2,7 +2,7 @@ package com.mbarros64.starwars.di
 
 import androidx.lifecycle.MutableLiveData
 import com.mbarros64.starwars.adapter.PeopleAdapter
-import com.mbarros64.starwars.api_endpoint.StarWarsApi
+import com.mbarros64.starwars.apiendpoint.StarWarsApi
 import com.mbarros64.starwars.model.People
 import com.mbarros64.starwars.service.NetworkService
 import dagger.Module
