@@ -1,8 +1,8 @@
-package com.matheus.starwars.service
+package com.mbarros64.starwars.service
 
-import com.matheus.starwars.api_endpoint.StarWarsApi
-import com.matheus.starwars.di.DaggerApiComponent
-import com.matheus.starwars.model.PeopleResult
+import com.mbarros64.starwars.api_endpoint.StarWarsApi
+import com.mbarros64.starwars.di.DaggerApiComponent
+import com.mbarros64.starwars.model.PeopleResult
 import io.reactivex.Single
 import javax.inject.Inject
 

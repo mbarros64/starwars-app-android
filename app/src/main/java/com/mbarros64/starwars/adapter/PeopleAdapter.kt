@@ -1,12 +1,12 @@
-package com.matheus.starwars.adapter
+package com.mbarros64.starwars.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.matheus.starwars.R
-import com.matheus.starwars.databinding.ItemPeopleBinding
-import com.matheus.starwars.model.People
+import com.mbarros64.starwars.R
+import com.mbarros64.starwars.databinding.ItemPeopleBinding
+import com.mbarros64.starwars.model.People
 
 class PeopleAdapter(private var PeopleList: ArrayList<People> ) :
     RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {

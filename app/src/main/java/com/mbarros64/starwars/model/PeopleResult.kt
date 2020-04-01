@@ -1,4 +1,4 @@
-package com.matheus.starwars.model
+package com.mbarros64.starwars.model
 
 data class PeopleResult(
     val count: Int,

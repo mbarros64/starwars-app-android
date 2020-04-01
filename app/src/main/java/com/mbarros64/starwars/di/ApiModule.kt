@@ -1,10 +1,10 @@
-package com.matheus.starwars.di
+package com.mbarros64.starwars.di
 
 import androidx.lifecycle.MutableLiveData
-import com.matheus.starwars.adapter.PeopleAdapter
-import com.matheus.starwars.api_endpoint.StarWarsApi
-import com.matheus.starwars.model.People
-import com.matheus.starwars.service.NetworkService
+import com.mbarros64.starwars.adapter.PeopleAdapter
+import com.mbarros64.starwars.api_endpoint.StarWarsApi
+import com.mbarros64.starwars.model.People
+import com.mbarros64.starwars.service.NetworkService
 import dagger.Module
 import dagger.Provides
 import io.reactivex.disposables.CompositeDisposable

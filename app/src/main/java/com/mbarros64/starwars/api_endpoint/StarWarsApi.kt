@@ -1,6 +1,6 @@
-package com.matheus.starwars.api_endpoint
-import com.matheus.starwars.model.PeopleResult
-import com.matheus.starwars.service.NetworkService
+package com.mbarros64.starwars.api_endpoint
+import com.mbarros64.starwars.model.PeopleResult
+import com.mbarros64.starwars.service.NetworkService
 import io.reactivex.Single
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory

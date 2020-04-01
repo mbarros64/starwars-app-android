@@ -1,4 +1,4 @@
-package com.matheus.starwars.model
+package com.mbarros64.starwars.model
 
 import com.squareup.moshi.Json
 

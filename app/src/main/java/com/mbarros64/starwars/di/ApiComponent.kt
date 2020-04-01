@@ -1,8 +1,8 @@
-package com.matheus.starwars.di
+package com.mbarros64.starwars.di
 
-import com.matheus.starwars.service.NetworkService
-import com.matheus.starwars.view.MainActivity
-import com.matheus.starwars.viewmodel.PeopleViewModel
+import com.mbarros64.starwars.service.NetworkService
+import com.mbarros64.starwars.view.MainActivity
+import com.mbarros64.starwars.viewmodel.PeopleViewModel
 import dagger.Component
 
 @Component(modules = [ApiModule::class])

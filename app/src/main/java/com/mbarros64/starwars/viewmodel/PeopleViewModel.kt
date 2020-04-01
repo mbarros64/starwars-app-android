@@ -1,11 +1,11 @@
-package com.matheus.starwars.viewmodel
+package com.mbarros64.starwars.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.matheus.starwars.di.DaggerApiComponent
-import com.matheus.starwars.model.People
-import com.matheus.starwars.service.NetworkService
+import com.mbarros64.starwars.di.DaggerApiComponent
+import com.mbarros64.starwars.model.People
+import com.mbarros64.starwars.service.NetworkService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver
