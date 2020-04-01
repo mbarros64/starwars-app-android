@@ -11,17 +11,17 @@ import com.mbarros64.starwars.model.People
 class PeopleAdapter(private var PeopleList: ArrayList<People> ) :
     RecyclerView.Adapter<PeopleAdapter.PeopleViewHolder>() {
 
-    class PeopleCallback(
-        peopleList: ArrayList<People>,
-        listOfPeoples: List<People>
-    ) : DiffUtil.ItemCallback<People>() {
-        override fun areItemsTheSame(oldItem: People, newItem: People): Boolean {
-            return oldItem == newItem
-        }
-
-        override fun areContentsTheSame(oldItem: People, newItem: People): Boolean {
-            return oldItem == newItem && oldItem == newItem
-        }
+    class PeopleDiffCallback(
+        private val oldList: List<People>,
+        private val newList: List<People>
+    ) : DiffUtil.Callback() {
+        override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int) =
+            oldList[oldItemPosition].name == newList[newItemPosition].name
+        override fun getOldListSize(): Int = oldList.size
+        override fun getNewListSize(): Int = newList.size
+        override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int) =
+            oldList[oldItemPosition].name == newList[newItemPosition].name &&
+                    oldList[oldItemPosition].gender == newList[newItemPosition].gender
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PeopleViewHolder {
@@ -41,8 +41,9 @@ class PeopleAdapter(private var PeopleList: ArrayList<People> ) :
     }
 
     fun setUpPeoples(listOfPeoples: List<People>) {
-        PeopleList.clear()
-        PeopleList.addAll(listOfPeoples)
+        val diffResult = DiffUtil.calculateDiff(PeopleDiffCallback(PeopleList, listOfPeoples))
+        PeopleList = arrayListOf(*listOfPeoples.toTypedArray())
+        diffResult.dispatchUpdatesTo(this)
 
     }
     inner class PeopleViewHolder(val itemPeopleBinding: ItemPeopleBinding) :
