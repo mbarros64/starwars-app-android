@@ -1,2 +1,2 @@
-rootProject.name='StarWars_Kotlin'
+rootProject.name='Starwars'
 include ':app'
