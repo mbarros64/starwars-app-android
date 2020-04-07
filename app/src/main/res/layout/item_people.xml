@@ -51,6 +51,7 @@
                 tools:text="cargo capacity: 50000" />
 
 
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
