@@ -1,5 +1,6 @@
 package com.mbarros64.starwars.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +16,8 @@ import com.mbarros64.starwars.viewmodel.PeopleViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
-class MainActivity : AppCompatActivity() {
+const val KEY_NAME = "name"
+open class MainActivity : AppCompatActivity() {
 
     @Inject
     lateinit var peopleAdapter: PeopleAdapter
@@ -79,5 +81,11 @@ class MainActivity : AppCompatActivity() {
         isErrorLD.observe(this, Observer { isError ->
             isError.let { people_fetch_error.visibility = if (it) View.VISIBLE else View.GONE }
         })
+    }
+
+    private fun CharactersClickedListener(people: People) {
+        val intent = Intent(this, PeopleDetailsActivity::class.java)
+        intent.putExtra(KEY_NAME, people.name)
+        startActivity(intent)
     }
 }
